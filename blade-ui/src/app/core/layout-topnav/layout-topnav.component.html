@@ -1,0 +1,25 @@
+<div>
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <button mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+            <h1>Personal Budget</h1>
+            <span class="menu-spacer"></span>
+            <div>
+                <a mat-button> Dashboard </a>
+                <a mat-button> Current Expenses </a>
+                <a mat-button> Monthly Expenses </a>
+                <a mat-button> Recurring Payments</a>
+                <a mat-button> Category </a>
+                <a mat-button> Groups </a>
+                <a mat-button> Rules </a>
+                <a mat-button> Create Rules </a>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="content-container">
+        <ng-content>
+        </ng-content>
+    </div>
+</div>
