@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "blade-ui"
+  "defaultProject": "blade-ui",
+  "cli": {
+    "analytics": false
+  }
 }
