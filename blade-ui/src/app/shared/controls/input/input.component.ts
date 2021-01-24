@@ -1,12 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss']
+  styleUrls: ['./input.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class InputComponent   {
-@Input() label:string="no-label";
-@Input() placeHolder:string="no-place-holder";
-
+export class InputComponent {
+  @Input() label = 'no-label';
+  @Input() placeHolder = 'no-place-holder';
 }
