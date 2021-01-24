@@ -10,12 +10,12 @@ const modules = [
   FormsModule,
   ReactiveFormsModule,
   MaterialModules,
-  LayoutTopnavModule
-]
+  LayoutTopnavModule,
+];
 
 @NgModule({
-  imports:[...modules],
-  exports: [...modules,LayoutComponent],
-  declarations:[LayoutComponent]
+  imports: [...modules],
+  exports: [...modules, LayoutComponent],
+  declarations: [LayoutComponent],
 })
-export class SharedModule{ }
+export class SharedModule {}

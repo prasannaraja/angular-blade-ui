@@ -5,10 +5,7 @@ import { MaterialModules } from 'src/app/material-modules';
 
 @NgModule({
   declarations: [LayoutTopnavComponent],
-  exports:[LayoutTopnavComponent],
-  imports: [
-    CommonModule,
-    MaterialModules
-  ]
+  exports: [LayoutTopnavComponent],
+  imports: [CommonModule, MaterialModules],
 })
-export class LayoutTopnavModule { }
+export class LayoutTopnavModule {}
