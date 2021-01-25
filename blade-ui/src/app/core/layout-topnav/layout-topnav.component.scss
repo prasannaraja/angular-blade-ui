@@ -1,4 +1,12 @@
 .mat-toolbar.mat-primary {
-    background: rgb(255,223,0);
-    color: black;
-  }
+  background: rgb(255,223,0);
+  color: black;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 45px;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 45px;
+}
