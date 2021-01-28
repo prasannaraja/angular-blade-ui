@@ -5,7 +5,16 @@
             <h1>Budget Planner</h1>
             <span class="menu-spacer"></span>
             <div>
-                <a mat-button> Dashboard </a>
+                <a mat-button 
+                    routerLinkActive="mat-primary"
+                    [routerLink]="'/welcome'"
+                    [routerLinkActiveOptions]="{ exact:true }"
+                > Welcome </a>
+                <a mat-button 
+                    routerLinkActive="mat-primary"
+                    [routerLink]="'/model-set'"
+                    [routerLinkActiveOptions]="{ exact:true }"
+                > Models </a>
                 <a mat-button> Current Expenses </a>
             </div>
         </mat-toolbar-row>
