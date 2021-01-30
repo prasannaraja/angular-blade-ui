@@ -1,16 +1,18 @@
-import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BladesContainerComponent } from 'src/app/shared/blader/blades-container/blades-container.component';
 import { ModelSetComponent } from './model-set.component';
 
-const routes: Routes = [
+export const MODELSET_ROUTES: Routes = [
   {
     path: '',
-    component: ModelSetComponent
+    component: ModelSetComponent,
+    pathMatch: 'full',
+  },
+  {
+    path:':id',
+    component: BladesContainerComponent,
+    children:[{ path:'**', component: BladesContainerComponent }],
   }
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class ModelSetRoutingModule { }
+export const ModelSetRoutingModule = RouterModule.forChild(MODELSET_ROUTES)
