@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-blade',
+  selector: 'budget-blade',
   templateUrl: './blade.component.html',
   styleUrls: ['./blade.component.scss']
 })
