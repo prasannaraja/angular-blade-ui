@@ -1,0 +1,9 @@
+.outer-flex-container {
+    display: flex;
+    overflow: auto;
+}
+
+.inner-flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
