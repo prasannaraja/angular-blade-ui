@@ -1,8 +1,63 @@
-.mat-toolbar.mat-primary {
+:host {
+  height: 100%;
+}
+
+.content-container {
+  display: flex;
+  overflow: auto;
+  height: 100%;
+}
+
+a mat-icon {
+  vertical-align: middle;
+  color: black;
+}
+
+.app-title {
+  flex-direction: row;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+
+  span {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: smaller;
+  }
+  a,
+  span{
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .app-title span {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.toolbar {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mat-toolbar.toolbar {
   background: rgb(255,223,0);
   color: black;
   border-bottom-width: thick;
-  border-bottom-color: darkgray;
+  border-bottom-color: black;
   border-bottom-style: solid;
 }
 
