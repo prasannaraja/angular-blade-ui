@@ -1,23 +1,24 @@
-<div>
-    <mat-toolbar color="primary">
-        <mat-toolbar-row>
-            <mat-icon>account_balance_wallet</mat-icon>
-            <h1>Budget Planner</h1>
-            <span class="menu-spacer"></span>
-            <div>
-                <a mat-button 
-                    routerLinkActive="mat-primary"
-                    [routerLink]="'/welcome'"
-                    [routerLinkActiveOptions]="{ exact:true }"
-                > Welcome </a>
-                <a mat-button 
-                    routerLinkActive="mat-primary"
-                    [routerLink]="'/model-set'"
-                    [routerLinkActiveOptions]="{ exact:true }"
-                > Models </a>
-                <a mat-button> Current Expenses </a>
-            </div>
-        </mat-toolbar-row>
+<div class="content">
+    <mat-toolbar class="toolbar">
+        <div class="app-title">
+            <a [routerLink]="['/']">
+                <mat-icon>account_balance_wallet</mat-icon>
+            </a>
+            <span>Budget Planner</span>
+        </div>
+        <div class="actions">
+            <button mat-button 
+                routerLinkActive="mat-primary"
+                [routerLink]="'/welcome'"
+                [routerLinkActiveOptions]="{ exact:true }"
+            > Welcome </button>
+            <button mat-button 
+                routerLinkActive="mat-primary"
+                [routerLink]="'/model-set'"
+                [routerLinkActiveOptions]="{ exact:true }"
+            > Models </button>
+            <button mat-button> Current Expenses </button>
+        </div>
     </mat-toolbar>
     <div class="content-container">
         <ng-content>
