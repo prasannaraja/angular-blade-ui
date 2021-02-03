@@ -9,7 +9,7 @@
 }
 
 .sticky {
-    // position: sticky;
+    position: sticky;
     top:0;
     left:0;
     z-index: 9999;
@@ -33,7 +33,7 @@
     height: 100%;
 }
 
-.blader-header {
+.blade-header {
     height: 40px;
     background: #efefef;
 
@@ -42,6 +42,18 @@
         float: right;
         padding: 3px 5px;
     }
+}
+
+.blade-loading {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(100,100,100,0.1);
+    text-align: center;
+    padding-top: 200px;
+    z-index: 9999;
 }
 
 .blade-content {
