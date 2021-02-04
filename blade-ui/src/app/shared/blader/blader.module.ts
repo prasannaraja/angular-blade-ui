@@ -11,7 +11,7 @@ import { BladeComponent } from './blade/blade.component';
     MaterialModules
   ],
   declarations: [BladerComponent, BladeComponent, BladesContainerComponent ],
-  exports:[BladerComponent, BladesContainerComponent],
+  exports:[BladeComponent, BladerComponent, BladesContainerComponent],
   providers:[]
 })
 export class BladerModule { }

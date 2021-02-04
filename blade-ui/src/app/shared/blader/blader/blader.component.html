@@ -1,16 +1,7 @@
 <div class="outer-flex-container">
     <div class="inner-flex-container">
-        <budget-blade>
-        </budget-blade>
-        <budget-blade>
-        </budget-blade>
-        <budget-blade class="blade--wide">
-        </budget-blade>
-        <budget-blade>
-        </budget-blade>
-        <budget-blade>
-        </budget-blade>
-        <budget-blade class="blade--wide">
-        </budget-blade>
+        <budget-blade *ngFor="let ctx of bladeContext$ | async" [context]="ctx" (selected)="selectBlade($event)"
+            (closed)="closed($event)"
+        ></budget-blade>
     </div>
 </div>
