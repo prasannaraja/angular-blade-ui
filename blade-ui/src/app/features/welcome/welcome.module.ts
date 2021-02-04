@@ -7,6 +7,10 @@ import { DashboardModule } from 'src/app/shared/controls/dashboard/dashboard.mod
 @NgModule({
   declarations: [WelcomeComponent],
   exports: [WelcomeComponent],
-  imports: [CommonModule, WelcomeRoutingModule, DashboardModule],
+  imports: [
+    CommonModule,
+    WelcomeRoutingModule,
+    DashboardModule,
+  ],
 })
 export class WelcomeModule {}
